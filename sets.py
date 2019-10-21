@@ -1,0 +1,7 @@
+a=set()
+print('a before adding:',a)
+a.add(1)
+a.add(2)
+a.add(1)
+a.add(3)
+print("a after adding 1,2,1,3:",a)
