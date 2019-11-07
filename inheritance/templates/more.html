@@ -4,8 +4,16 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+    {% extends "layut.html" %}
   <body>
-    <p> Thank u for continuing </p>
-    <a href="{{ url_for('index') }}"> Go back </a>  
+    {% block heading %}
+      Second Page
+    {% endblock %}
+
+    {% block body %}
+      <p> Thank u for continuing </p>
+      <a href="{{ url_for('index') }}"> Go back </a>
+    {% endblock %}
+
   </body>
 </html>
