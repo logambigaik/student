@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Is it New Year?</title>
+  </head>
+  <style>
+    body{
+          text-align : center;
+        }
+  </style>
+  <body>
+
+      {% if new_year %}
+        <h1>Yes! Happy New Year</h1>
+      {% else %}
+        <h1>Noooooooo</h1>
+      {% endif %}
+
+      <ul> <h1> NAMES </h1>
+      {% for name in names %}
+        <li> <h2>{{ name }} </h2> </li>
+      </ul>
+      {% endfor %}
+  </body>
+</html>
