@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+    {% extends "layut.html" %}
+  <body>
+    {% block heading %}
+      Second Page
+    {% endblock %}
+
+    {% block body %}
+      <p> Thank u for continuing </p>
+      <a href="{{ url_for('index') }}"> Go back </a>
+    {% endblock %}
+
+  </body>
+</html>
